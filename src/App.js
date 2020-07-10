@@ -7,7 +7,7 @@ import Users from "./components/users/Users";
 class App extends Component {
   state = {
     users: [],
-    loading: false
+    loading: false,
   };
   async componentDidMount() {
     console.log(process.env.REACT_APP_GITHUB_CLIENT_ID);

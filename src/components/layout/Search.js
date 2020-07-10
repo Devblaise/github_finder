@@ -2,11 +2,11 @@ import React, { Component } from "react";
 
 class Search extends Component {
   state = {
-    text: ""
+    text: "",
   };
 
-  onChange = e => this.setState({ [e.target.name]: e.target.value });
-  onSubmit = e => e.preventDefault();
+  onChange = (e) => this.setState({ [e.target.name]: e.target.value });
+  onSubmit = (e) => e.preventDefault();
 
   render() {
     return (
@@ -36,7 +36,7 @@ class Search extends Component {
 const userSearch = {
   display: "flex",
   flex: 1,
-  justifyContent: "space-between"
+  justifyContent: "space-between",
 };
 
 export default Search;
